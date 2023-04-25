@@ -1,5 +1,5 @@
 ESX = nil
-TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+ESX = exports["es_extended"]:getSharedObject()
 
 RegisterServerEvent('sBlipsCreator:createBlip')
 AddEventHandler('sBlipsCreator:createBlip', function(name, label, coords, sprite, display, scale, color, flashes)
