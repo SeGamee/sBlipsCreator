@@ -1,5 +1,5 @@
 ESX = nil
-TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+ESX = exports["es_extended"]:getSharedObject()
 
 function KeyboardInput(TextEntry, ExampleText, MaxStringLenght)
 	AddTextEntry('FMMC_KEY_TIP1', TextEntry)
